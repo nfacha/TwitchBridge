@@ -1,0 +1,8 @@
+name: TwitchBridge
+version: ${project.version}
+main: com.nunofacha.twitchbridge.Main
+api-version: 1.16
+prefix: TWITCH-BRIDGE
+authors: [ Facha ]
+description: Connects Twitch Chat to the Server
+website: nunofacha.com
