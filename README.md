@@ -20,4 +20,8 @@ You can look [here](https://github.com/nfacha/TwitchBridge/blob/master/src/main/
 
 **twitch.chat.receive** - Users with this permissions can see the twitch chat
 
-**twitch.chat.send** - Users with this permissions can send messages on the Twitch chat (WARNING: Messages will be sent with the user in the config, this permissions should only be given to the actual streamer!)
+**twitch.chat.send** - Users with this permissions can send messages on the Twitch chat (**WARNING**: Messages will be sent with the user in the config, this permissions should only be given to the actual streamer!)
+
+To send a message from Minecraft to Twitch the message should start with :
+
+So, it would be `:hello Twitch from Minecraft`
