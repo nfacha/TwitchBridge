@@ -1,3 +1,3 @@
-channel-name: freemcservernet
-login-username: freemcservernet
-login-token: PASTEYOURTOKENHERE #https://twitchapps.com/tmi/
+channel-name: freemcservernet #The twitch channel you want to connect to the chat
+login-username: freemcservernet #Your twitch username, used for authentication
+login-token: PASTEYOURTOKENHERE #Your Twitch oAuth token, obtain it here: https://twitchapps.com/tmi/
