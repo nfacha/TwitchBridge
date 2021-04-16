@@ -11,6 +11,9 @@ public class TwitchChatListener {
     public void onMessageReceived(ChannelMessageEvent e) {
         for (Player p : Main.plugin.getServer().getOnlinePlayers()) {
             if (p.hasPermission("twitch.chat.receive")) {
+                if(Main.pluginConfig.getStringList("ignored-users").contains(e.getActor().getNick())){
+                    return;
+                }
                 p.sendMessage(ChatColor.BOLD + (ChatColor.LIGHT_PURPLE + "[TW] " + ChatColor.RESET) + e.getActor().getNick() + " -> " + e.getMessage());
             }
         }
