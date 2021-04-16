@@ -26,7 +26,9 @@ public final class Main extends JavaPlugin {
         fileManager.getConfig("config.yml").copyDefaults(true).save();
         Main.pluginConfig = fileManager.getConfig("config.yml").get();
         logger.info("Config loaded");
-        updateCheck();
+        if(Main.pluginConfig.getBoolean("update-check")){
+            updateCheck();
+        }
         Metrics metrics = new Metrics(this, 10824);
         TwitchChat.init();
     }

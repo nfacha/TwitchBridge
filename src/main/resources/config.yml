@@ -1,10 +1,11 @@
 update-channel: master #master = stable | dev = development versions
+update-check: true #Should we check for plugin updates?
 
 channel-name: freemcservernet #The twitch channel you want to connect to the chat
 login-username: freemcservernet #Your twitch username, used for authentication
 login-token: PASTEYOURTOKENHERE #Your Twitch oAuth token, obtain it here: https://twitchapps.com/tmi/
-streamer-only: true
-streamer-name: Esquilim
-ignored-users:
+streamer-only: true #If this is enabled only the name set on "streamer-name" can send outbound messages, good for when there are multiple OPs
+streamer-name: Esquilim #Read the setting above
+ignored-users: #Messages from users on this list wont be displayed (good for bots)
   - streamelements
   - streamlabs
